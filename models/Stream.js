@@ -1,4 +1,4 @@
-const { v4: uuidv4 } = require('uuid');
+﻿const { v4: uuidv4 } = require('uuid');
 const { db } = require('../db/database');
 class Stream {
   static create(streamData) {

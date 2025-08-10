@@ -1,4 +1,4 @@
-<% layout('layout') -%>
+﻿<% layout('layout') -%>
   <% function formatFileSize(bytes) { if (bytes < 1024) return bytes + ' B' ; else if (bytes < 1048576) return (bytes /
     1024).toFixed(1) + ' KB' ; else if (bytes < 1073741824) return (bytes / 1048576).toFixed(1) + ' MB' ; else return
     (bytes / 1073741824).toFixed(1) + ' GB' ; } function formatDate(dateString) { const date=new Date(dateString); const
@@ -79,7 +79,7 @@
                   <span>
                     <%= new Date(video.upload_date).toLocaleDateString() %>
                   </span>
-                  <span class="mx-1">•</span>
+                  <span class="mx-1">â€¢</span>
                   <span>
                     <%= typeof formatFileSize==='function' ? formatFileSize(video.file_size) : (video.file_size / (1024
                       * 1024)).toFixed(1) + ' MB' %>
@@ -1382,3 +1382,4 @@
         background-color: black;
       }
     </style>
+

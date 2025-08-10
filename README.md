@@ -1,12 +1,12 @@
-![logo](https://github.com/user-attachments/assets/50231124-d546-43cb-9cf4-7a06a1dad5bd)
+﻿![logo](https://github.com/user-attachments/assets/50231124-d546-43cb-9cf4-7a06a1dad5bd)
 
-# StreamFlow v2.0: Fresh From The Oven 🔥
+# Streamdeck v2.0: Fresh From The Oven ðŸ”¥
 
-StreamFlow adalah aplikasi live streaming yang memungkinkan kamu melakukan live streaming ke berbagai platform seperti YouTube, Facebook, dan platform lainnya menggunakan protokol RTMP. Aplikasi ini dapat berjalan di VPS (Virtual Private Server) dan mendukung streaming ke banyak platform secara bersamaan.
+Streamdeck adalah aplikasi live streaming yang memungkinkan kamu melakukan live streaming ke berbagai platform seperti YouTube, Facebook, dan platform lainnya menggunakan protokol RTMP. Aplikasi ini dapat berjalan di VPS (Virtual Private Server) dan mendukung streaming ke banyak platform secara bersamaan.
 
 ![Untitled-2](https://github.com/user-attachments/assets/3d7bb367-a1b2-43a5-839b-b6aa8dd5de90)
 
-## ✨ Fitur Utama
+## âœ¨ Fitur Utama
 
 - **Multi-Platform Streaming** - Streaming ke berbagai platform populer secara bersamaan
 - **Video Gallery** - Kelola koleksi video dengan antarmuka yang intuitif
@@ -17,7 +17,7 @@ StreamFlow adalah aplikasi live streaming yang memungkinkan kamu melakukan live 
 - **Video Analytics** - Pantau statistik dan performa video langsung dari aplikasi
 - **Responsive UI** - Antarmuka modern yang responsif di semua perangkat
 
-## 🛠️ System Requirements
+## ðŸ› ï¸ System Requirements
 
 - **Node.js** v20 atau versi terbaru
 - **FFmpeg** untuk video processing
@@ -25,15 +25,15 @@ StreamFlow adalah aplikasi live streaming yang memungkinkan kamu melakukan live 
 - **VPS/Server** dengan minimal 1 Core CPU & 1GB RAM
 - **Port** 7575 (dapat disesuaikan di file [.env](.env))
 
-## ⚡ Quick Installation
+## âš¡ Quick Installation
 
 Untuk instalasi otomatis, jalankan perintah berikut:
 
 ```bash
-curl -o install.sh https://raw.githubusercontent.com/bangtutorial/streamflow/main/install.sh && chmod +x install.sh && ./install.sh
+curl -o install.sh https://raw.githubusercontent.com/bangtutorial/streamdeck/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
-## 🔧 Manual Installation
+## ðŸ”§ Manual Installation
 
 ### 1. Persiapan Server
 
@@ -69,16 +69,16 @@ Install Git:
 sudo apt install git -y
 ```
 
-### 2. Setup Project StreamFlow
+### 2. Setup Project Streamdeck
 
 Clone repository:
 ```bash
-git clone https://github.com/bangtutorial/streamflow
+git clone https://github.com/bangtutorial/streamdeck
 ```
 
 Masuk ke direktori project:
 ```bash
-cd streamflow
+cd streamdeck
 ```
 
 Install dependencies:
@@ -138,7 +138,7 @@ sudo npm install -g pm2
 
 Jalankan aplikasi dengan PM2:
 ```bash
-pm2 start app.js --name streamflow
+pm2 start app.js --name streamdeck
 ```
 
 Akses aplikasi melalui browser:
@@ -151,15 +151,15 @@ Contoh: `http://88.12.34.56:7575`
 > [!Important]
 > Setelah membuat akun pertama kali, lakukan **Sign Out** kemudian login kembali untuk sinkronisasi database.
 
-## 🔐 Reset Password
+## ðŸ” Reset Password
 
 Jika lupa password atau perlu reset akun:
 
 ```bash
-cd streamflow && node reset-password.js
+cd streamdeck && node reset-password.js
 ```
 
-## ⏰ Pengaturan Timezone Server
+## â° Pengaturan Timezone Server
 
 Untuk memastikan scheduled streaming berjalan dengan waktu yang akurat:
 
@@ -180,10 +180,10 @@ sudo timedatectl set-timezone Asia/Jakarta
 
 ### Restart aplikasi setelah mengubah timezone:
 ```bash
-pm2 restart streamflow
+pm2 restart streamdeck
 ```
 
-## 🐳 Docker Deployment
+## ðŸ³ Docker Deployment
 
 ### 1. Persiapan Environment
 
@@ -215,7 +215,7 @@ Data akan tersimpan secara otomatis di:
 docker-compose exec app node reset-password.js
 ```
 
-## 🔫 Troubleshooting
+## ðŸ”« Troubleshooting
 
 ### Permission Error
 ```bash
@@ -237,7 +237,7 @@ sudo kill -9 <PID>
 rm db/*.db
 
 # Restart aplikasi untuk membuat database baru
-pm2 restart streamflow
+pm2 restart streamdeck
 ```
 
 ### Docker Troubleshooting
@@ -254,17 +254,18 @@ pm2 restart streamflow
 - Set `NODE_ENV=production`
 - Akses melalui HTTPS untuk cookie session
 
-## 💫 Contributors
+## ðŸ’« Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=bangtutorial/streamflow)](https://github.com/bangtutorial/streamflow/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=bangtutorial/streamdeck)](https://github.com/bangtutorial/streamdeck/graphs/contributors)
 
-## 📄 License
+## ðŸ“„ License
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/bangtutorial/streamflow/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/bangtutorial/streamdeck/blob/main/LICENSE)
 
 ---
-© 2025 - [Bang Tutorial](https://youtube.com/bangtutorial)
+Â© 2025 - [Bang Tutorial](https://youtube.com/bangtutorial)
 "# live" 
 "# 32" 
 "# 32" 
 "# 32" 
+

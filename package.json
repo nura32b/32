@@ -1,5 +1,5 @@
-{
-  "name": "streamflow",
+﻿{
+  "name": "streamdeck",
   "version": "2.0.0",
   "description": "Cloud streaming solution with FFmpeg",
   "main": "app.js",  
@@ -37,3 +37,4 @@
     "nodemon": "^3.0.1"
   }
 }
+

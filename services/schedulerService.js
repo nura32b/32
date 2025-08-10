@@ -1,4 +1,4 @@
-const Stream = require('../models/Stream');
+﻿const Stream = require('../models/Stream');
 const scheduledTerminations = new Map();
 const SCHEDULE_LOOKAHEAD_SECONDS = 60;
 let streamingService = null;

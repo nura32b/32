@@ -1,11 +1,11 @@
-/*
- * StreamFlow v2.0 - Live Streaming Lewat VPS
+﻿/*
+ * Streamdeck v2.0 - Live Streaming Lewat VPS
  * 
  * Custom Features & UI Components
  * Created by: Bang Tutorial
  * GitHub: https://github.com/bangtutorial
 
- * © 2025 Bang Tutorial - All rights reserved
+ * Â© 2025 Bang Tutorial - All rights reserved
  */
 
 let selectedVideoData = null;
@@ -203,7 +203,7 @@ function displayFilteredVideos(videos) {
         </div>
         <div class="flex-1 min-w-0 ml-3">
           <p class="text-sm font-medium text-white truncate">${video.name}</p>
-          <p class="text-xs text-gray-400">${video.resolution} • ${video.duration}</p>
+          <p class="text-xs text-gray-400">${video.resolution} â€¢ ${video.duration}</p>
         </div>
       `;
       container.appendChild(button);
@@ -434,3 +434,4 @@ function validateStreamKeyForPlatform(streamKey, platform) {
     });
 }
 document.addEventListener('DOMContentLoaded', initModal);
+

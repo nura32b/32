@@ -1,4 +1,4 @@
-const readline = require('readline');
+﻿const readline = require('readline');
 const bcrypt = require('bcrypt');
 const { db } = require('./db/database');
 const User = require('./models/User');
@@ -24,19 +24,19 @@ function validatePassword(password) {
     return isValid;
 }
 function askUsername() {
-    console.log('\n===== StreamFlow Lite - Password Reset =====\n');
+    console.log('\n===== Streamdeck Lite - Password Reset =====\n');
     rl.question('Enter username: ', async (username) => {
         try {
             const user = await User.findByUsername(username);
             if (!user) {
-                console.log('\n❌ User not found! Please check the username and try again.');
+                console.log('\nâŒ User not found! Please check the username and try again.');
                 askUsername();
                 return;
             }
-            console.log(`\n✅ User found: ${username}`);
+            console.log(`\nâœ… User found: ${username}`);
             askNewPassword(user);
         } catch (error) {
-            console.error('\n❌ Error finding user:', error);
+            console.error('\nâŒ Error finding user:', error);
             askUsername();
         }
     });
@@ -44,7 +44,7 @@ function askUsername() {
 function askNewPassword(user) {
     rl.question('Enter new password: ', (password) => {
         if (!validatePassword(password)) {
-            console.log('❌ Password does not meet requirements. Please try again.');
+            console.log('âŒ Password does not meet requirements. Please try again.');
             askNewPassword(user);
             return;
         }
@@ -54,17 +54,17 @@ function askNewPassword(user) {
 function askConfirmPassword(user, password) {
     rl.question('Confirm new password: ', async (confirmPassword) => {
         if (password !== confirmPassword) {
-            console.log('\n❌ Passwords do not match! Please try again.');
+            console.log('\nâŒ Passwords do not match! Please try again.');
             askConfirmPassword(user, password);
             return;
         }
         try {
             const hashedPassword = await bcrypt.hash(password, 10);
             await User.update(user.id, { password: hashedPassword });
-            console.log('\n✅ Password has been reset successfully!\n');
+            console.log('\nâœ… Password has been reset successfully!\n');
             rl.close();
         } catch (error) {
-            console.error('\n❌ Error resetting password:', error);
+            console.error('\nâŒ Error resetting password:', error);
             console.log('Please try again.');
             askNewPassword(user);
         }

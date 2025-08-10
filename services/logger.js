@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const util = require('util');
 const logDir = path.join(process.cwd(), 'logs');

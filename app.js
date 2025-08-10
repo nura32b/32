@@ -1,4 +1,4 @@
-require('dotenv').config();
+﻿require('dotenv').config();
 require('./services/logger.js');
 const express = require('express');
 const path = require('path');
@@ -1483,7 +1483,7 @@ app.get('/api/server-time', (req, res) => {
 });
 app.listen(port, '0.0.0.0', async () => {
   const ipAddresses = getLocalIpAddresses();
-  console.log(`StreamFlow running at:`);
+  console.log(`Streamdeck running at:`);
   if (ipAddresses && ipAddresses.length > 0) {
     ipAddresses.forEach(ip => {
       console.log(`  http://${ip}:${port}`);
@@ -1509,3 +1509,4 @@ app.listen(port, '0.0.0.0', async () => {
     console.error('Failed to sync stream statuses:', error);
   }
 });
+

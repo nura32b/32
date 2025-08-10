@@ -1,4 +1,4 @@
-const ffmpeg = require('fluent-ffmpeg');
+﻿const ffmpeg = require('fluent-ffmpeg');
 const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
 const { getVideoDurationInSeconds } = require('get-video-duration');
 const fs = require('fs');

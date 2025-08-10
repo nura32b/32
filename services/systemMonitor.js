@@ -1,4 +1,4 @@
-const si = require('systeminformation');
+﻿const si = require('systeminformation');
 
 let previousNetworkData = null;
 let previousTimestamp = null;
